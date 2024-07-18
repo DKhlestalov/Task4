@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db_auth:
+    image: postgres
+    container_name: 'db_task4'
+    ports:
+      - "5432:5432"
+    environment:
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_PASSWORD=postgres'
+    
